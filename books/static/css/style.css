@@ -1,0 +1,40 @@
+/* .menu {
+    background-color: blue;
+    float: left;
+    width: 20%;
+    height: 100%;
+}
+
+.treść {
+    background-color: greenyellow;
+    float: right;
+    width: 80%;
+} */
+
+.col-3 {
+    background-color: greenyellow;
+}
+
+.col-9 {
+    background-color: aqua;
+}
+
+h1 {
+    color: red;
+}
+
+#wyślij {
+    background-color: green;
+}
+
+#resetuj {
+    background-color: red;
+}
+
+/* #user {
+    color: white;
+} */
+
+/* .card-img-top {
+    height: 75px;
+} */

@@ -1,0 +1,29 @@
+{% extends "base.html" %}
+
+{% block content %}
+<i class="far fa-times-circle"></i>
+        <h1>Biblioteka</h1>
+        <h3>Dodawanie nowej książki</h3>
+        <form method="POST">
+            <label for="title">Tytuł</label>
+            <input type="text" name="tytuł">
+            <br><br>
+            <label for="autor">Autor</label>
+            <input type="text" name="autor">
+            <br><br>
+            <label for="data">Data wydania</label>
+            <input type="date" name="data">
+            <br><br>
+            <label for="pages">Liczba stron</label>
+            <input type="number" name="pages">
+            <br><br>
+            <label for="cover">Kolor okładki</label>
+            <input type="color" name="cover">
+            <br><br>
+            <label for="zdjecie">Kolor okładki</label>
+            <input type="file" name="zdjecie">
+            <br><br>
+            <button type="reset" id="resetuj">Resetuj</button>
+            <button type="submit" id="wyślij">Wyślij</button>
+        </form>
+{% endblock content %}

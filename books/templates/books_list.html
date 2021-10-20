@@ -1,0 +1,28 @@
+{% extends "base.html" %}
+
+{% block content %}
+    <h1>Lista książek</h1>
+
+    <div class="row">
+    {% for book in books %}
+    <div class="col-sm-12 col-md-6 col-lg-4 col-xl-3">
+        <div class="card" style="height: 450px;">
+            <img src="/media/{{ book.cover }}" style="height: 200px;" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">{{book.title}}</h5>
+              <p class="card-text">
+                  <ul>
+                      <li>Autor: {{book.author}}</li>
+                      <li>Opis: {{book.short_description}}</li>
+                      <li>Data publikacji: {{book.published_at}}</li>
+                  </ul>
+              </p>
+              <a href="{% url 'books_details' book.id %}" class="btn btn-primary">Więcej...</a>
+            </div>
+        </div>
+        <br>
+    </div>
+    {% endfor %}
+    </div>
+
+{% endblock content %}
